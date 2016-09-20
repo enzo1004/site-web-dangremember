@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="Dangremember">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Dang Remember</title>
+
+        <link rel="stylesheet" href="assets/css/normalize.css">
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="assets/css/dangremember.css">
+        <link rel="stylesheet" href="assets/css/animations.css">
+		<style>
+			.edito {
+					width: 37%;
+					height: 550px;
+					margin: 100px 10px;
+					background-image: linear-gradient(to bottom, #fff 0px, #f8f8f8);
+					border-radius : 20px;
+					boder: 1px solid #bbb;
+					padding: 20px;
+					float: left;
+					 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) dangremember;
+			}
+			
+			.nouvelles {
+					width: 60%;
+					height: 550px;
+					margin: 100px 10px;
+					background-image: linear-gradient(to bottom, #fff 0px, #f8f8f8);
+					border-radius : 20px;
+					boder: 1px solid #bbb;
+					padding: 20px;
+					float: right;
+					 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) dangremember;
+			}
+			
+		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script type="text/javascript" src="angular-route.min.js"></script>
+		<script type="text/javascript" src="angular-route.min.js.map"></script>
+		<script type="text/javascript" src="dangremember.js"></script>
+		<script type="text/javascript" src="/src/association/controllers/homeController.js"></script>
+		<script type="text/javascript" src="/src/adhesion/controllers/loginController.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top navbar-default">
+            <div class="navbar-header pull-left">
+                <a class="logo navbar-brand" href="#/">
+                    <img src="assets/img/dangremember.jpg">
+                </a>				
+			</div>
+			<div style="width:100%;">
+			
+				<div style="float:left;margin-left:20px;">
+					<a href="#/" alt="association">
+						<h3 style="color:red">L'association</h3>
+					</a>
+				</div>
+				<div style="float:left;margin-left:60px;">
+					<a href="#/login" alt="adherer">
+						<h3  style="color:red">adhérer</h3>	
+					</a>
+				</div>
+				
+				<div style="float:left;margin-left:60px;">
+					<a href="#/" alt="annuaire">
+						<h3  style="color:red">annuaire</h3>
+					</a>
+				</div>
+				<div  style="float:left;margin-left:60px;">
+					<a href="#/" alt="entreprise">
+						<h3 style="color:red">entreprise</h3>
+					</a>
+				</div>
+				<div  style="float:left;margin-left:60px;">
+					<a href="#/" alt="identifier">
+						<h3 style="color:red">s'identifier</h3>	
+					</a>
+				</div>
+			</div>
+			
+            <div class="btn-group pull-right" ng-show="true">
+                <a class="btn btn-danger" href="#/">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+                <a class="btn btn-danger" href="#/users">
+                    <span class="glyphicon glyphicon-user"></span>
+                </a>
+                <a class="btn btn-danger" href="#/">
+                    <span class="glyphicon glyphicon-signal"></span>
+                </a>
+                <button class="btn btn-default" ng-click="main.logout()">
+                    <span class="glyphicon glyphicon-log-out"></span>
+                </button>
+            </div>
+        </div>
+
+		<div class="ng-scope" ng-view="">
+			<!--div class="edito">
+				<h2>&Eacute;dito</h2>
+				<p>
+					Bienvenue sur le site de l'Association des Anciens Étudiants de l'Université de Ngaoundéré, vous pouvez librement découvrir l'association, consulter l'annuaire des diplômés ou modifier vos information si vous êtes diplômés de l'Université de Ngaoundéré.<br /><br />
+					Bien sûr vous pouvez adhérer à l'association depuis ce site, en quelques secondes !<br /><br />
+					<a class="btn btn-primary btn-large" href="#/">Adhérer en ligne &raquo;</a><br /><br />
+					Pour profiter du site au maximum, <strong>identifiez-vous</strong>&nbsp;: vous aurez accès à plus de fonctionnalités que vous soyez adhérents ou non.
+				</p>
+			</div>
+			<div class="nouvelles">
+				<h2>Les dernières nouvelles ...</h2>
+				<p>
+					<br/>
+					
+				</p>		
+			</div-->
+		</div>
+    </body>
+</html>
